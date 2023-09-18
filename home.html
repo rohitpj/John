@@ -43,6 +43,35 @@
         }
 
         /* ... other CSS styling ... */
+        .service-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-image {
+            display: block;
+            margin: 0 auto; /* center the image */
+            width: 80%; /* set to desired width, adjust as needed */
+        }
+
+
+    </style>
+    <title>Centered Text</title>
+    <style>
+        .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh; /* this will take up the full height of the viewport */
+            text-align: center;
+        }
+
+        p {
+            max-width: 800px; /* you can adjust this value as per your requirements */
+            margin: 0 auto;
+        }
     </style>
     <!-- You can also link to external stylesheets here -->
 </head>
@@ -51,7 +80,7 @@
     <header>
         <!-- Logo -->
         <div class="logo">
-            <img src="logo.png" alt="John's Accountancy and Taxation Logo">
+            <img src="images/logo.png" alt="John's Accountancy and Taxation Logo">
         </div>
 
         <!-- Navigation -->
@@ -65,131 +94,131 @@
         </nav>
 
         <!-- Main Heading -->
-        <p>Personalised Professional Accountancy Services</p>
+        <strong>Personalised Professional Accountancy Services</strong>
     </header>
 
-    <section class="introduction">
-        <p>
-            Established in 2010, we have earned our reputation as a trusted and dedicated chartered accountant firm. With over 31 years of hands-on experience, we are committed to providing personalized and professional accounting services tailored to meet the unique needs of our diverse clientele.
-        </p>
-    </section>
-    
-    <!-- Services Section -->
-    <section class="services">
-        <h2>Our Key Services</h2>
-        <ul>
-            <li><strong>Annual Accounts:</strong> Comprehensive financial statements prepared for your business annually.</li>
-            <li><strong>Tax Returns and Advice:</strong> Expert advice on tax compliance and strategic planning to minimize liabilities.</li>
-            <li><strong>VAT Returns:</strong> Assistance in the accurate computation and submission of your VAT returns.</li>
-            <li><strong>Payroll Services:</strong> Efficient payroll management to ensure your employees are paid accurately and on time.</li>
-            <li><strong>HMRC Queries:</strong> Addressing any queries or concerns related to the HM Revenue & Customs.</li>
-            <li><strong>Company Formation:</strong> Guided support in establishing your business entity, ensuring all legal requirements are met.</li>
-        </ul>
-    </section>
-    <div class="is-layout-constrained wp-container-21 wp-block-group" style="padding-right:20px;padding-bottom:60px;padding-left:20px">
+<div class="centered-container">
+    <p>
+        Established in 2010, we have earned our reputation as a trusted and dedicated chartered accountant firm. With over 31 years of hands-on experience, we are committed to providing personalized and professional accounting services tailored to meet the unique needs of our diverse clientele.
+    </p>
+</div>
 
-        <!-- First Row: Annual Accounts, Tax Returns and Advice, VAT Returns -->
-        <div class="is-layout-flex wp-container-14 wp-block-columns" style="padding-bottom:40px; display: flex; justify-content: space-between;">
-    
-            <!-- Annual Accounts Service -->
-            <div class="is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
-                <figure class="wp-block-image" id="/services/annual-accounts/">
-                    <img decoding="async" src="calculator.jpg" alt="Annual Accounts" style="max-width: 100%; height: auto;"/>
-                </figure>
-                <h3 class="mt-3"><a href="/services/annual-accounts/">Annual Accounts</a></h3>
-                <p>Complete and timely financial statements prepared for your business.</p>
-                <div class="is-layout-flex wp-block-buttons">
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link has-background wp-element-button" href="/services/annual-accounts/" style="border-radius:6px;background-color:#2f67b2">More on Annual Accounts ›</a>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Tax Returns and Advice Service -->
-            <div class="is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
-                <figure class="wp-block-image" id="/services/tax-returns-and-advice/">
-                    <img decoding="async" src="calculator.jpg" alt="Tax Returns and Advice" style="max-width: 100%; height: auto;"/>
-                </figure>
-                <h3 class="mt-3"><a href="/services/tax-returns-and-advice/">Tax Returns and Advice</a></h3>
-                <p>Specialized advice for compliance and strategic tax planning.</p>
-                <div class="is-layout-flex wp-block-buttons">
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link has-background wp-element-button" href="/services/tax-returns-and-advice/" style="border-radius:6px;background-color:#2f67b2">More on Tax Returns and Advice ›</a>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- VAT Returns Service -->
-            <div class="is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
-                <figure class="wp-block-image" id="/services/vat-returns/">
-                    <img decoding="async" src="calculator.jpg" alt="VAT Returns" style="max-width: 100%; height: auto;"/>
-                </figure>
-                <h3 class="mt-3"><a href="/services/vat-returns/">VAT Returns</a></h3>
-                <p>Assisting with regular VAT return preparations and filings.</p>
-                <div class="is-layout-flex wp-block-buttons">
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link has-background wp-element-button" href="/services/vat-returns/" style="border-radius:6px;background-color:#2f67b2">More on VAT Returns ›</a>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-    
-        <!-- Second Row: Payroll Services, HMRC Queries, Company Formation -->
-        <div class="is-layout-flex wp-container-14 wp-block-columns" style="padding-bottom:40px; display: flex; justify-content: space-between;">
-    
-            <!-- Payroll Services -->
-            <div class="is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
-                <figure class="wp-block-image" id="/services/payroll/">
-                    <img decoding="async" src="calculator.jpg" alt="Payroll Services" style="max-width: 100%; height: auto;"/>
-                </figure>
-                <h3 class="mt-3"><a href="/services/payroll/">Payroll Services</a></h3>
-                <p>Ensuring timely and accurate payroll processes for your workforce.</p>
-                <div class="is-layout-flex wp-block-buttons">
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link has-background wp-element-button" href="/services/payroll/" style="border-radius:6px;background-color:#2f67b2">More on Payroll Services ›</a>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- HMRC Queries -->
-            <div class="is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
-                <figure class="wp-block-image" id="/services/hmrc-queries/">
-                    <img decoding="async" src="calculator.jpg" alt="HMRC Queries" style="max-width: 100%; height: auto;"/>
-                </figure>
-                <h3 class="mt-3"><a href="/services/hmrc-queries/">HMRC Queries</a></h3>
-                <p>Assistance and representation for any HMRC related inquiries.</p>
-                <div class="is-layout-flex wp-block-buttons">
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link has-background wp-element-button" href="/services/hmrc-queries/" style="border-radius:6px;background-color:#2f67b2">More on HMRC Queries ›</a>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Company Formation -->
-            <div class="is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
-                <figure class="wp-block-image" id="/services/company-formation/">
-                    <img decoding="async" src="calculator.jpg" alt="Company Formation" style="max-width: 100%; height: auto;"/>
-                </figure>
-                <h3 class="mt-3"><a href="/services/company-formation/">Company Formation</a></h3>
-                <p>Guidance on the best structures and assistance in company registrations.</p>
-                <div class="is-layout-flex wp-block-buttons">
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link has-background wp-element-button" href="/services/company-formation/" style="border-radius:6px;background-color:#2f67b2">More on Company Formation ›</a>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-    
+    <!-- First Row: Annual Accounts, Tax Returns and Advice, VAT Returns -->
+<div class="is-layout-flex wp-container-14 wp-block-columns" style="padding-bottom:40px; display: flex; justify-content: space-between;">
+
+    <!-- Annual Accounts Service -->
+    <!-- Annual Accounts Service -->
+<!-- Annual Accounts Service -->
+    <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
+        <figure class="wp-block-image service-image" id="/services/annual-accounts/">
+            <img decoding="async" src="images/calculator.jpg" alt="Annual Accounts" style="max-width: 100%; height: auto;"/>
+        </figure>
+        <h3 class="mt-1">Annual Accounts</h3> <!-- Adjusted the margin-top to reduce the gap -->
+        <p>Complete and timely financial statements prepared for your business.</p>
+        <a href="/services/annual-accounts/" style="text-decoration: none; color: inherit;">More on Annual Accounts ›</a>
     </div>
+
+
+
+    <!-- Tax Returns and Advice Service -->
+    <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
+        <figure class="wp-block-image service-image" id="/services/tax-returns/">
+            <img decoding="async" src="images/tax_return.jpg" alt="Tax Returns and Advice" style="max-width: 100%; height: auto;"/>
+        </figure>
+        <h3 class="mt-1">Tax Returns and Advice</h3>
+        <p>Expert tax advice and return preparation for your business.</p>
+        <a href="/services/tax-returns/" style="text-decoration: none; color: inherit;">More on Tax Returns and Advice ›</a>
+    </div>
+
+    <!-- VAT Returns Service -->
+    <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
+        <figure class="wp-block-image service-image" id="/services/vat-returns/">
+            <img decoding="async" src="images/vat.jpg" alt="VAT Returns" style="max-width: 100%; height: auto;"/>
+        </figure>
+        <h3 class="mt-1">VAT Returns</h3>
+        <p>Assisting with regular VAT return preparations and filings.</p>
+        <a href="/services/vat-returns/" style="text-decoration: none; color: inherit;">More on VAT Returns ›</a>
+    </div>
+</div>
+
+<!-- Second Row: Payroll Services, HMRC Queries, Company Formation -->
+<div class="is-layout-flex wp-container-14 wp-block-columns" style="padding-bottom:40px; display: flex; justify-content: space-between;">
+
+    <!-- Payroll Services -->
+    <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
+        <figure class="wp-block-image service-image" id="/services/payroll/">
+            <img decoding="async" src="images/payroll.jpg" alt="Payroll Services" style="max-width: 100%; height: auto;"/>
+        </figure>
+        <h3 class="mt-1">Payroll Services</h3>
+        <p>Ensuring timely and accurate payroll processes for your workforce.</p>
+        <a href="/services/payroll/" style="text-decoration: none; color: inherit;">More on Payroll Services ›</a>
+    </div>
+
+    <!-- HMRC Queries -->
+    <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
+        <figure class="wp-block-image service-image" id="/services/hmrc-queries/">
+            <img decoding="async" src="images/HMRC.jpg" alt="HMRC Queries" style="max-width: 100%; height: auto;"/>
+        </figure>
+        <h3 class="mt-1">HMRC Queries</h3>
+        <p>Assistance and representation for any HMRC related inquiries.</p>
+        <a href="/services/hmrc-queries/" style="text-decoration: none; color: inherit;">More on HMRC Queries ›</a>
+    </div>
+
+    <!-- Company Formation -->
+    <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
+        <figure class="wp-block-image service-image" id="/services/company-formation/">
+            <img decoding="async" src="images/company.jpg" alt="Company Formation" style="max-width: 100%; height: auto;"/>
+        </figure>
+        <h3 class="mt-1">Company Formation</h3>
+        <p>Guidance on the best structures and assistance in company registrations.</p>
+        <a href="/services/company-formation/" style="text-decoration: none; color: inherit;">More on Company Formation ›</a>
+    </div>
+</div>
+
+    
     
     
     <!-- ...rest of the content -->
 
     <!-- Footer -->
     <footer>
-        <!-- Footer content -->
+        <!-- Footnote Section -->
+<div style="background-color: #f5f5f5; padding: 20px 0; width: 100%;">
+
+    <div style="max-width: 100%; margin: 0 auto; padding: 0 15px;">
+
+        <!-- Address and Contact Details -->
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            
+            <!-- Address Details -->
+            <div style="flex: 1;">
+                <strong>Our Address:</strong><br>
+                4 Northville Road, Filton, Bristol, BS7 ORG
+            </div>
+
+            <!-- Contact Details -->
+            <div style="flex: 1;">
+                <strong>Contact Us:</strong><br>
+                Ph: 01179698666<br>
+                Fax: 0117 3250510<br>
+                Mob: 07753821192<br>
+                Email: <a href="mailto:johnsaccountancy@yahoo.com">johnsaccountancy@yahoo.com</a>
+            </div>
+
+        </div>
+
+        <!-- Essential Links -->
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="/" style="margin-right: 15px; text-decoration: none; color: #333;">Home</a>
+            <a href="/about-us/" style="margin-right: 15px; text-decoration: none; color: #333;">About Us</a>
+            <a href="/services/" style="margin-right: 15px; text-decoration: none; color: #333;">Services</a>
+            <a href="/contact/" style="text-decoration: none; color: #333;">Contact</a>
+        </div>
+
+    </div>
+
+</div>
+
     </footer>
 
     <!-- JavaScript scripts -->
