@@ -8,14 +8,14 @@
     <style>
         /* Set the background color for the entire body */
         body {
-            background-color: #FAF3E0; /* Light beige color */
+            background-color: #ada189; /* Light beige color */
             margin: 0;
             font-family: Arial, sans-serif; /* Default font */
         }
 
         header {
             position: relative; /* Relative positioning for header */
-            padding-top: 300px; /* This pushes the content below the logo. Adjust the padding to match the height of the logo */
+            padding-bottom: 30px; /* This pushes the content below the logo. Adjust the padding to match the height of the logo */
             text-align: center; /* Center align the content */
         }
 
@@ -24,7 +24,8 @@
             width: 100%; /* Span the entire width of the header */
             height: 300px; /* Set a fixed height for the logo */
             object-fit: cover; /* Maintain the aspect ratio of the logo */
-            position: absolute; /* Absolute position to fit inside the header */
+            display: block;
+            margin: 0 auto; /* Absolute position to fit inside the header */
             top: 0; /* Start from the top */
             left: 0; /* Start from the left */
         }
@@ -48,6 +49,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: 2px solid #333; /* Adding a border */
+            padding: 10px; /* Adding inner padding inside the box */
+            margin: 10px; /* Separating each box from others */
+            border-radius: 10px; /* Optional: adds rounded corners */
+            flex: 1;
+        }
+        .hero-section {
+            background-image: url('images/leaf.jpg'); /* Adjust path if necessary */
+            background-repeat: no-repeat;
+            background-size: cover; /* To make sure the image covers the entire section */
+            padding: 50px 0; /* Add some padding around the content */
+            color: #ffffff; /* White text for better visibility. Adjust if needed */
+            text-align: center; /* Centering the text */
         }
 
         .service-image {
@@ -55,6 +69,7 @@
             margin: 0 auto; /* center the image */
             width: 80%; /* set to desired width, adjust as needed */
         }
+        /* Add this new styling */
 
 
     </style>
@@ -78,15 +93,17 @@
 
 <body>
     <header>
+        
         <!-- Logo -->
         <div class="logo">
-            <img src="images/logo.png" alt="John's Accountancy and Taxation Logo">
+            <img src="images/new_logo_upscaled.png" alt="John's Accountancy and Taxation Logo">
         </div>
 
         <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+
+                <li><a href="home.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -96,8 +113,7 @@
         <!-- Main Heading -->
         <strong>Personalised Professional Accountancy Services</strong>
     </header>
-
-<div class="centered-container">
+<div class="introduction">
     <p>
         Established in 2010, we have earned our reputation as a trusted and dedicated chartered accountant firm. With over 31 years of hands-on experience, we are committed to providing personalized and professional accounting services tailored to meet the unique needs of our diverse clientele.
     </p>
@@ -111,7 +127,7 @@
 <!-- Annual Accounts Service -->
     <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
         <figure class="wp-block-image service-image" id="/services/annual-accounts/">
-            <img decoding="async" src="images/calculator.jpg" alt="Annual Accounts" style="max-width: 100%; height: auto;"/>
+            <!--<img decoding="async" src="images/calculator.jpg" alt="Annual Accounts" style="max-width: 100%; height: auto;"/>-->
         </figure>
         <h3 class="mt-1">Annual Accounts</h3> <!-- Adjusted the margin-top to reduce the gap -->
         <p>Complete and timely financial statements prepared for your business.</p>
@@ -123,7 +139,7 @@
     <!-- Tax Returns and Advice Service -->
     <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
         <figure class="wp-block-image service-image" id="/services/tax-returns/">
-            <img decoding="async" src="images/tax_return.jpg" alt="Tax Returns and Advice" style="max-width: 100%; height: auto;"/>
+            <!--<img decoding="async" src="images/tax_return.jpg" alt="Tax Returns and Advice" style="max-width: 100%; height: auto;"/>-->
         </figure>
         <h3 class="mt-1">Tax Returns and Advice</h3>
         <p>Expert tax advice and return preparation for your business.</p>
@@ -133,7 +149,7 @@
     <!-- VAT Returns Service -->
     <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
         <figure class="wp-block-image service-image" id="/services/vat-returns/">
-            <img decoding="async" src="images/vat.jpg" alt="VAT Returns" style="max-width: 100%; height: auto;"/>
+            <!--<img decoding="async" src="images/vat.jpg" alt="VAT Returns" style="max-width: 100%; height: auto;"/>-->
         </figure>
         <h3 class="mt-1">VAT Returns</h3>
         <p>Assisting with regular VAT return preparations and filings.</p>
@@ -147,7 +163,7 @@
     <!-- Payroll Services -->
     <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
         <figure class="wp-block-image service-image" id="/services/payroll/">
-            <img decoding="async" src="images/payroll.jpg" alt="Payroll Services" style="max-width: 100%; height: auto;"/>
+            <!--<img decoding="async" src="images/payroll.jpg" alt="Payroll Services" style="max-width: 100%; height: auto;"/>-->
         </figure>
         <h3 class="mt-1">Payroll Services</h3>
         <p>Ensuring timely and accurate payroll processes for your workforce.</p>
@@ -157,7 +173,7 @@
     <!-- HMRC Queries -->
     <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
         <figure class="wp-block-image service-image" id="/services/hmrc-queries/">
-            <img decoding="async" src="images/HMRC.jpg" alt="HMRC Queries" style="max-width: 100%; height: auto;"/>
+            <!--<img decoding="async" src="images/HMRC.jpg" alt="HMRC Queries" style="max-width: 100%; height: auto;"/>-->
         </figure>
         <h3 class="mt-1">HMRC Queries</h3>
         <p>Assistance and representation for any HMRC related inquiries.</p>
@@ -167,7 +183,7 @@
     <!-- Company Formation -->
     <div class="service-container is-layout-flow wp-block-column" style="flex: 1; padding: 0 10px;">
         <figure class="wp-block-image service-image" id="/services/company-formation/">
-            <img decoding="async" src="images/company.jpg" alt="Company Formation" style="max-width: 100%; height: auto;"/>
+           <!-- <img decoding="async" src="images/company.jpg" alt="Company Formation" style="max-width: 100%; height: auto;"/>-->
         </figure>
         <h3 class="mt-1">Company Formation</h3>
         <p>Guidance on the best structures and assistance in company registrations.</p>
@@ -181,6 +197,7 @@
     <!-- ...rest of the content -->
 
     <!-- Footer -->
+
     <footer>
         <!-- Footnote Section -->
 <div style="background-color: #f5f5f5; padding: 20px 0; width: 100%;">
@@ -209,7 +226,7 @@
 
         <!-- Essential Links -->
         <div style="margin-top: 20px; text-align: center;">
-            <a href="home" style="margin-right: 15px; text-decoration: none; color: #333;">Home</a>
+            <a href="home.html" style="margin-right: 15px; text-decoration: none; color: #333;">Home</a>
             <a href="about-us.html" style="margin-right: 15px; text-decoration: none; color: #333;">About Us</a>
             <a href="services.html" style="margin-right: 15px; text-decoration: none; color: #333;">Services</a>
             <a href="contact.html" style="text-decoration: none; color: #333;">Contact</a>
